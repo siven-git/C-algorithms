@@ -5,7 +5,7 @@ void selectsort(int A[],int n)
 {
     for(int i=0;i<n-1;i++)
     {
-        int k=i;
+        int k=i; % 初始化当前序列A[i]~A[n-1]中的最小的元素是第i个位置的元素A[i]
         for(int j=i+1;j<n;j++)
         {
             if(A[j]<A[k])
